@@ -15,12 +15,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     
+    @IBOutlet weak var tip2Label: UILabel!
+    @IBOutlet weak var tip3Label: UILabel!
+    @IBOutlet weak var tip4Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tipLabel.text = "0.00"
-        totalLabel.text = "0.00"
+        tipLabel.text = "$0.00"
+        totalLabel.text = "$0.00"
         
+        tip2Label.text = "$0.00"
+        tip3Label.text = "$0.00"
+        tip4Label.text = "$0.00"
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +44,10 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+        tip2Label.text = String(format: "$%.2f", total / 2)
+        tip3Label.text = String(format: "$%.2f", total / 3)
+        tip4Label.text = String(format: "$%.2f", total / 4)
     }
 
     @IBAction func onTap(sender: AnyObject) {
