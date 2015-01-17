@@ -20,6 +20,6 @@ Notes:
 
 Walkthrough of all user stories:
 
-![Video Walkthrough](coming_soon.gif)
+![Video Walkthrough](tips.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
