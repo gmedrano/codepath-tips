@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         tip2Label.text = "$0.00"
         tip3Label.text = "$0.00"
         tip4Label.text = "$0.00"
+        billField.borderStyle = UITextBorderStyle.RoundedRect;
     }
 
     override func didReceiveMemoryWarning() {
